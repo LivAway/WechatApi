@@ -53,5 +53,10 @@
             "npm-asset-library": "vendor/npm",
             "bower-asset-library": "vendor/bower"
         }
+    },
+    "autoload": {
+        "files": [
+            "common/components/GlobalFunctions.php"
+        ]
     }
 }
