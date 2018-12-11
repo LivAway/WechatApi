@@ -11,6 +11,7 @@ class BaseActiveController extends ActiveController{
     public $user = null;
     public $userId = null;
     public $params=[];
+    public $params_get=[];
     public function init()
     {
         parent::init();
@@ -21,7 +22,8 @@ class BaseActiveController extends ActiveController{
         header('Access-Control-Allow-Headers:x-requested-with,content-type');
         $params=yii::$app->request->post();
 
-
+        $params_get=yii::$app->request->get();
+        $this->params_get = $params_get;
 
         if(!empty($params['data'])){
             $json=json_decode($params['data'],true);

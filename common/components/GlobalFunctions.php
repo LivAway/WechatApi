@@ -27,10 +27,6 @@ function css()
 
 }
 
-function ttt(){
-    echo 111;
-}
-
 
 
 function findMaxVersionFilename($filename)
@@ -126,4 +122,12 @@ function searchFileNames($dir, $search_filename, &$result)
 
     }
     closedir($iterator);
+}
+
+function isBlank($object)
+{
+    if (is_null($object) || '' === $object || (is_array($object) && count($object) < 1)) {
+        return true;
+    }
+    return empty($object);
 }
