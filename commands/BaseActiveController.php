@@ -23,6 +23,9 @@ class BaseActiveController extends ActiveController{
         $params=yii::$app->request->post();
 
         $params_get=yii::$app->request->get();
+        if(isPresent($params)){
+            $params_get = array_merge($params_get,$params);
+        }
         $this->params_get = $params_get;
 
         if(!empty($params['data'])){

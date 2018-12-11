@@ -131,3 +131,8 @@ function isBlank($object)
     }
     return empty($object);
 }
+
+function isPresent($object)
+{
+   return !isBlank($object);
+}
