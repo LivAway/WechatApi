@@ -23,7 +23,7 @@ return [
 ### 根据名字搜索成员
 
     请求方式:http-post/get
-    请求接口:/kindness/search
+    请求接口:/kindness/transfer
     上行参数:
         keyword 搜索关键字
     下行参数:
