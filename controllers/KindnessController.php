@@ -44,7 +44,7 @@ class kindnessController extends BaseActiveController
             $data[] = [
                 'nickname' => $result['nickname'],
                 'username' => $result['username'],
-                'icon' => $result['headpic'],
+                'head_pic' => $result['headpic'],
                 'id' => $result['oid'],
             ];
 
@@ -84,7 +84,7 @@ class kindnessController extends BaseActiveController
         }
 
         $data = [
-            'oid' => $results['oid'],
+            'id' => $results['oid'],
             'nickname' => $results['nickname'],
             'username' => $results['username'],
             'head_pic' => $results['headpic'],
@@ -133,12 +133,19 @@ class kindnessController extends BaseActiveController
 
             $connect = yii::$app->db;
 
-            User::inserKNPLOG($amount, 1, yii::$app->user->identity->overplus_KNP, "transfer :" . $amount . "knp",
-                $user_id, $connect);
+            User::inserKNPLOG($amount, 1, yii::$app->user->identity->overplus_KNP, "transfer :" . $amount . "knp", $user_id, $connect);
 
-            return ["code" => 200, "msg" => "Success"];
+            $data = [
+                'note' => $mark_log,
+                'amount' => $amount,
+                'self_name' => $result_self['nickname'],
+                'nickname' => $model['nickname'],
+                'head_pic' => $model['headpic'],
+            ];
+
+            return ["code" => 200, "reason" => "Success", 'data' => $data];
         } else {
-            return ["code" => 400, "msg" => "Data save false"];
+            return ["code" => 400, "reason" => "Data save false"];
         }
 
     }
