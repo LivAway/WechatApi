@@ -40,6 +40,7 @@ return [
 
 
 ###转账界面
+
     请求方式:http-post/get
     请求接口:/kindness/search
     上行参数:
@@ -60,6 +61,7 @@ return [
         }
       
 ###支付 KNP
+
     请求方式:http-post/get
     请求接口:/kindness/pay
     上行参数:
