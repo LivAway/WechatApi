@@ -19,8 +19,8 @@ return [
 
 ```
 
-#API文档
-###根据名字搜索成员
+# API文档
+### 根据名字搜索成员
 
     请求方式:http-post/get
     请求接口:/kindness/search
@@ -39,7 +39,7 @@ return [
     }
 
 
-###转账界面
+### 转账界面
 
     请求方式:http-post/get
     请求接口:/kindness/search
@@ -60,7 +60,7 @@ return [
               ]
         }
       
-###支付 KNP
+### 支付 KNP
 
     请求方式:http-post/get
     请求接口:/kindness/pay
