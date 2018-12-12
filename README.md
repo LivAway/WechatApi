@@ -34,7 +34,7 @@ return [
             'nickname' =昵称
             'username' =用户名
             'head_pic' =头像
-            'id' = 用户 oid
+            'id' = 用户 id
               ]
     }
 
@@ -46,6 +46,7 @@ return [
     上行参数:
         id 用户 id
         self_id  自己id 
+        
     下行参数:
     {
         code: 错误码（200 正确  400 错误）
@@ -64,9 +65,15 @@ return [
 
     请求方式:http-post/get
     请求接口:/kindness/pay
+    
     上行参数:
-        id 用户 id
-        self_id  自己id 
+        user_id 用户 id
+        self_id  自己 id
+        psaaword 密码
+        password_re 确认密码（可选）
+        amount 变动knp资产
+        note 留言
+         
     下行参数:
     {
         code: 错误码（200 正确  400 错误）
