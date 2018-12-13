@@ -21,11 +21,17 @@ return [
 
 # 部署说明
 
-拉完代码后，需要安装composer (PHP依赖)
+git代码后，需要安装composer (PHP依赖)
 
-安装说明： `https://getcomposer.org/`
+ [点击查看安装说明](https://getcomposer.org/)
 
-安装完毕后 在项目内执行composer update 将程序所需的库下载下来(时间比较慢，建议连接外网)
+安装完毕后 在项目内先后执行
+
+`composer install`
+
+`composer update `
+
+将程序所需的依赖库下载下来(时间比较慢，建议连接外网)
 
 # API文档
 ### 根据名字搜索成员
