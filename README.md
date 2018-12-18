@@ -3,7 +3,8 @@
 
 ## 服务器说明
 
-linux centos7 `推荐`
+linux centos7 
+
 window server 服务器
 
 
@@ -32,13 +33,13 @@ mysql 安装目录 /www/server/mysql
 
 #### 项目目录：
 
-    `/www/wwwroot/WechatApi`
+    /www/wwwroot/WechatApi
 
 ####更新项目：
 
 登录至服务器进入目录
         
-    `cd /www/wwwroot/WechatApi`
+    cd /www/wwwroot/WechatApi
 
 
 git clone 拉取项目后，需要安装composer (PHP依赖)
@@ -47,16 +48,16 @@ git clone 拉取项目后，需要安装composer (PHP依赖)
 
 安装完毕后 在项目内先后执行(composer 执行目录已添加到PATH 中)
 
-    `composer install`
+    composer install
 
-    `composer update `
+    composer update 
 
 将程序所需的依赖库下载下来(时间比较慢，建议连接外网)
 
 
 拉取最新代码 在项目目录下执行命令：
     
-    `git pull`   
+    git pull   
 
  **注意：请勿直接拷贝代码到服务器，统一使用git部署**
 
