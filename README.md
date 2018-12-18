@@ -1,27 +1,15 @@
 # LivAway Wechat Api
 
 
-### 服务器 
+## 服务器说明
 
 linux centos7 `推荐`
 window server 服务器
 
 
-### 配置mysql数据连接 打开 `config/db.php`
+#### 配置mysql数据连接 打开 `/config/db.php`
 
-```php
-<?php
-return [
-    'class' => 'yii\db\Connection',
-    'dsn' => 'mysql:host=127.0.0.1;dbname=livaway',
-    'username' => 'root',
-    'password' => （询问管理员）,
-    'charset' => 'utf8',
-];
-
-```
-
-## 服务器说明
+根据当前mysql配置数据库信息
 
 
 服务器地址：
@@ -29,7 +17,6 @@ return [
     ssh superadmin@47.96.231.54
 
 若需要更高权限，登陆后再切到root ; su root 执行后面操作
-
 
 
  #### 环境配置：
@@ -76,7 +63,8 @@ git clone 拉取项目后，需要安装composer (PHP依赖)
 
 
 
-# API文档
+## API文档
+
 ### 根据名字搜索成员
 
     请求方式:http-post/get
