@@ -1,17 +1,15 @@
 # LivAway Wechat Api
-### 环境说明：
-Apache2.2+版本
 
-nginx1.15+
-
-myql5.6+版本
-
-php5.6+版本
+ 
 
 ### 服务器 
+
 linux centos7 `推荐`
 window server 服务器
+
+
 ### 配置mysql数据连接 打开 `config/db.php`
+
 ```php
 <?php
 return [
@@ -24,9 +22,39 @@ return [
 
 ```
 
-# 部署说明
+## 服务器说明
 
-git代码后，需要安装composer (PHP依赖)
+
+服务器地址：ssh superadmin@47.96.231.54
+
+密码和原来root一致，
+
+若需要更高权限，登陆后再切到root  执行后面操作 su root
+
+
+
+ #### 环境配置：
+所有项目需要软件安装包  ： /root/src/
+
+nginx 安装目录：/www/server/nginx    
+
+php 安装目录 /www/server/php
+
+mysql 安装目录 /www/server/mysql
+
+
+
+#### 项目目录：
+
+`/www/wwwroot/WechatApi`
+
+更新项目：
+
+登录至服务器
+`cd /www/wwwroot/WechatApi`
+
+
+git clone 拉取项目后，需要安装composer (PHP依赖)
 
  [点击查看安装说明](https://getcomposer.org/)
 
@@ -37,6 +65,15 @@ git代码后，需要安装composer (PHP依赖)
 `composer update `
 
 将程序所需的依赖库下载下来(时间比较慢，建议连接外网)
+
+
+拉取最新代码 在项目目录下执行命令：
+`git pull`   
+
+ **请勿直接拷贝代码到服务器，统一使用git部署**
+
+
+
 
 # API文档
 ### 根据名字搜索成员
