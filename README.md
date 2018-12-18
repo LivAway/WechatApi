@@ -27,9 +27,7 @@ return [
 
 服务器地址：ssh superadmin@47.96.231.54
 
-密码和原来root一致，
-
-若需要更高权限，登陆后再切到root  执行后面操作 su root
+若需要更高权限，登陆后再切到root ; su root 执行后面操作
 
 
 
@@ -48,17 +46,17 @@ mysql 安装目录 /www/server/mysql
 
 `/www/wwwroot/WechatApi`
 
-更新项目：
+####更新项目：
 
-登录至服务器
+登录至服务器进入目录
 `cd /www/wwwroot/WechatApi`
 
 
 git clone 拉取项目后，需要安装composer (PHP依赖)
 
- [点击查看安装说明](https://getcomposer.org/)
+ [点击查看composer安装说明](https://getcomposer.org/)
 
-安装完毕后 在项目内先后执行
+安装完毕后 在项目内先后执行(composer 执行目录已添加到PATH 中)
 
 `composer install`
 
@@ -70,7 +68,7 @@ git clone 拉取项目后，需要安装composer (PHP依赖)
 拉取最新代码 在项目目录下执行命令：
 `git pull`   
 
- **请勿直接拷贝代码到服务器，统一使用git部署**
+ **注意：请勿直接拷贝代码到服务器，统一使用git部署**
 
 
 
